@@ -1,12 +1,12 @@
 :root {
-    --bg-color: #fff;
+    --bg-color: #F7E7CE;
     --text-color: #000;
     --item-bg: #f0f0f0;
     --checked-color: #888;
 }
 
 body.dark {
-    --bg-color: #121212;
+    --bg-color: #001F3F;
     --text-color: #fff;
     --item-bg: #1e1e1e;
     --checked-color: #bbb;
