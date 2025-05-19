@@ -1,0 +1,79 @@
+:root {
+    --bg-color: #fff;
+    --text-color: #000;
+    --item-bg: #f0f0f0;
+    --checked-color: #888;
+}
+
+body.dark {
+    --bg-color: #121212;
+    --text-color: #fff;
+    --item-bg: #1e1e1e;
+    --checked-color: #bbb;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+    .controls input {
+        flex: 1;
+        padding: 10px;
+    }
+
+    .controls button {
+        padding: 10px;
+        cursor: pointer;
+    }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: var(--item-bg);
+    margin-bottom: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    cursor: grab;
+}
+
+    li.dragging {
+        opacity: 0.5;
+    }
+
+.item-text {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: var(--checked-color);
+}
+
+.item-buttons button {
+    margin-left: 5px;
+    cursor: pointer;
+}
