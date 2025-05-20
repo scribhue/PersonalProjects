@@ -1,14 +1,14 @@
 :root {
     --bg-color: #F7E7CE;
     --text-color: #000;
-    --item-bg: #f0f0f0;
+    --item-bg: #e6ca9e;
     --checked-color: #888;
 }
 
 body.dark {
     --bg-color: #001F3F;
     --text-color: #fff;
-    --item-bg: #1e1e1e;
+    --item-bg: #1d3d5f;
     --checked-color: #bbb;
 }
 
