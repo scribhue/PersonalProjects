@@ -25,6 +25,8 @@ function createListItem(text) {
     const buttons = document.createElement("div");
     buttons.className = "item-buttons";
 
+
+    // Edit Button
     const editBtn = document.createElement("button");
     editBtn.textContent = "✏️";
     editBtn.onclick = () => {
@@ -32,11 +34,22 @@ function createListItem(text) {
         if (newText) span.textContent = newText;
     };
 
+
+    // Delete Button
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "❌";
     deleteBtn.onclick = () => li.remove();
 
     buttons.append(editBtn, deleteBtn);
+    li.append(checkbox, span, buttons);
+
+    // (Duplicate) Button
+    const reorderBtn = document.createElement("button");
+    reorderBtn.textContent = "🔁";
+    reorderBtn.title = "Reorder (Duplicate)";
+    reorderBtn.onclick = () => createListItem(span.textContent);
+
+    buttons.append(editBtn, deleteBtn, reorderBtn);
     li.append(checkbox, span, buttons);
 
     // Drag and Drop
