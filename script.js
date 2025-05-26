@@ -87,9 +87,3 @@ function toggleMode() {
     const modeButton = document.getElementById("modeToggle");
     modeButton.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
 }
-function validate() {
-  if (document.getElementById('name').value === '') {
-    alert('Name is required');
-    return false;
-  }
-}
